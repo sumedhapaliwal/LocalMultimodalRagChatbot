@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.chainlit
+.files/
+.env
+
+data/output_docling.md
+data/parsed_data.pkl
