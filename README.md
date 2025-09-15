@@ -1,8 +1,8 @@
-# 📄 RAG-Powered PDF Chatbot with Chainlit & DeepSeek
+# 📄 RAG-Powered PDF Chatbot with Chainlit & Ollama (Deepseek)
 
 This project is a lightweight, locally hosted **Retrieval-Augmented Generation (RAG)** application that allows users to **chat with PDF documents**, including rich data like **tables**, using an intuitive interface built with **Chainlit**.
 
-Powered by **DeepSeek** models and enhanced with **Qdrant** as the vector store, this system enables intelligent semantic search and response generation based on your document's content.
+Uses **DeepSeek's** model (with Ollama) and enhanced with **Qdrant** as the vector store, this system enables intelligent semantic search and response generation based on your document's content.
 
 ---
 
@@ -14,8 +14,8 @@ Powered by **DeepSeek** models and enhanced with **Qdrant** as the vector store,
 - **🔗 Chainlit UI**  
   Provides an elegant, real-time chat interface where users can interact directly with their PDF content. Minimal setup, maximum interactivity.
 
-- **🧠 DeepSeek Integration**  
-  Utilizes DeepSeek's LLMs to generate intelligent responses. The model interprets context and extracts relevant information even from complex document structures.
+- **🧠 Ollama Integration**  
+  Utilizes DeepSeek's LLMs using Ollama (locally) to generate intelligent responses. The model interprets context and extracts relevant information even from complex document structures.
 
 - **📊 Structured Data Handling**  
   Goes beyond plain text! The system can accurately extract and reason about **tables, lists, and other structured elements** within PDFs—crucial for reports, scientific papers, and financial documents.
@@ -33,7 +33,8 @@ Powered by **DeepSeek** models and enhanced with **Qdrant** as the vector store,
 | Component       | Description                                 |
 |----------------|---------------------------------------------|
 | **Chainlit**    | Interactive UI for RAG applications         |
-| **DeepSeek**    | LLM for context-aware response generation   |
+| **Ollama**      | For local integration of Deepseek's R1      |
+| **Docling**     | To parse documents into markdown for LLM    |
 | **Qdrant**      | Vector store for embedding-based retrieval  |
 | **PDF Parser**  | Extracts text and table data from documents |
 | **Docker**      | Runs Qdrant locally                         |
